@@ -1,0 +1,62 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.bg_1 {
+    background-image: url("../public/back_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 100vh;
+
+}
+
+.bg_2 {
+    background-image: url("../public/back_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    height: 100vh;
+    filter: blur(1.5px);
+}
+
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url("fonts/HelveticaNeue-Bold.otf") format('opentype');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Helvetica Neue Bold', Arial, sans-serif;
+}
+
+#title {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(87.75deg, #B5DEFF 0%, #FFFFFF 98.98%);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 8rem;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#login_button {
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 2px solid rgba(171, 171, 171, 0.3);
+    padding: 10px 20px;
+    font-size: 2rem;
+    border-radius: 50px;
+
+}

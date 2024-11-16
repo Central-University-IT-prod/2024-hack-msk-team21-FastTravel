@@ -1,0 +1,6 @@
+psycopg2-binary
+flask
+flask_jwt_extended
+python-dotenv
+bcrypt
+loguru

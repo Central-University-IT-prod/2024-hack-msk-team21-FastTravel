@@ -1,0 +1,29 @@
+{% block body %}
+{% with message = get_flashed_messages(category_filter=["Registered"]) %}
+  {% if message %}
+    <ul class=flashes>
+      <li>{{ message }}</li>
+      <a href="/login">Log in?</a>
+    </ul>
+  {% endif %}
+{% endwith %}
+
+  <h1>Registration</h1>
+  {% if error %}
+    <p class=error><strong>Error:</strong> {{ error }}
+  {% endif %}
+  <form action="" method=post>
+    <dl>
+      <dt>Email:
+      <input type=text name=email maxlength="35">
+      <dt>Name:
+      <input type=name name=name maxlength="35">
+      <dt>password:
+      <input type=password name=password1 maxlength="35">
+      <!-- в базу добавляется пароль 1, запрещенный символы: { } ' " -->
+      <dt>Password repeat:
+      <input type=password name=password2 maxlength="35">
+    </dl>
+    <p><input type=submit value=Register>
+  </form>
+{% endblock %}

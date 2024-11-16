@@ -1,0 +1,211 @@
+:root {
+    --color-light: white;
+    --color-dark: rgb(15, 15, 15);
+    --color-signal: white;
+    --color-gray: #1c1b1b;
+    --color-background: #1c1b1b;
+
+    --color-text: var(--color-light);
+    --color-accent: var(--color-signal);
+    --color-form: var(--color-gray);
+
+    --size-bezel: .5rem;
+
+    line-height: 1.4;
+
+    font-family: 'Inter', sans-serif;
+    font-size: calc(.6rem + .4vw);
+    color: var(--color-text);
+    font-weight: 300;
+    padding: 0 calc(var(--size-bezel) * 3);
+}
+
+
+#login_or_register {
+    position: absolute;
+    top: 2vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50vw;
+    height: 20%;
+    background-color: transparent;
+}
+
+#login_button {
+    position: absolute;
+    left: 0;
+    top: 12vh;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 5vw;
+    background-color: transparent;
+    border: none;
+    font-size: 3vw;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#register_button {
+    position: absolute;
+    right: 0;
+    top: 12vh;
+    width: 20vw;
+    height: 5vh;
+    border-radius: 5vw;
+    background-color: transparent;
+    border: none;
+    font-size: 3vw;
+    color: rgba(250, 250, 250, 0.5);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#login_button, #register_button {
+    transition: color 0.3s ease-in-out;
+}
+
+#login_button:hover, #register_button:hover {
+    color: white;
+}
+
+#register_button:hover {
+    color: white !important;
+    transition: color 0.9s;
+}
+
+#register_button.fadeout {
+    color: white;
+    transition: color 1s ease-in-out;
+}
+
+#confirmText {
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    animation: fadeIn 2s ease-in-out;
+    white-space: nowrap;
+}
+
+#login_form {
+    position: absolute;
+    top: 15vh;
+    left: 50vw;
+    transform: translateX(-50%);
+    background-color: #061e42;
+    border-radius: 1.3vw;
+    width: 50vw;
+    display: inline-block;
+}
+
+.input {
+    position: relative;
+    width: 80%;
+    height: 9vh;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 5vh;
+}
+
+.input__label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 0.5vw;
+    padding: 0.3vw;
+    white-space: nowrap;
+    transform-origin: 0 0;
+    transition: transform 120ms ease-in;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    background: #061e42;
+    line-height: 1.2;
+    font-size: 1.7em;
+}
+
+.input__field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 3px solid currentColor;
+    padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
+    padding-left: 0.9vw;
+    color: currentColor;
+    background: transparent;
+    border-radius: 0.85vw;
+    outline: none;
+    font-size: 2em;
+}
+
+.input__field:focus + .input__label,
+.input__field:not(:placeholder-shown) + .input__label {
+    transform: translate(.45rem, calc(-50% - 2.15rem)) scale(.9);
+    color: var(--color-accent);
+}
+
+.input__field[type="password"] {
+    -webkit-text-security: disc;
+}
+
+
+
+@font-face {
+    font-family: 'Helvetica Neue Bold';
+    src: url("../fonts/HelveticaNeue-Bold.otf") format('opentype');
+    font-weight: bold;
+}
+
+#welcome {
+    position: absolute;
+    left: 50%;
+    top: 8%;
+    transform: translate(-50%, -50%);
+    font-family: 'Helvetica Neue Bold', Arial, sans-serif;
+    font-size: 3rem;
+    background: linear-gradient(90.26deg, #256CA4 -0.77%, #FFFFFF 101.77%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#register {
+    position: relative;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: 8vh;
+    margin-bottom: 10vh;
+    border-radius: 5vw;
+    background-color: #061e42;
+    border: 3px solid white;
+    font-size: 300%;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#login_button {
+    position: absolute;
+    left: 50%;
+    top: 90vh;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+}

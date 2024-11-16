@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  back:
+    image: fasttravel
+    container_name: fasttravel_run
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    command: python -m src
